@@ -18,7 +18,20 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+Add to your Gemfile by executing:
+
+`gem install deep_freeze`
+
+Add a file in the initializers directory, call it `deep_freeze.rb` and inside add `require deep_freeze`
+
+Inside the file you want the functionality:
+
+`Include DeepFreeze`
+
+if you have constant that you want to prevent from being modified. For example
+
+FRUITS = ["apples", "oranges"]
+deep_freeze(FRUITS)
 
 ## Development
 
